@@ -91,7 +91,7 @@ function checkAnswer (currentLevel) {
             setTimeout(function (){
                   $('body').removeClass('game-over');
             },200)
-            $('#level-title').text( "Game Over, press any key to restart");
+            $('#level-title').text( "Game Over, click here to restart");
             startOver();
         
             
@@ -107,20 +107,17 @@ function startOver () {
       started = false;
       level = 0;
       gamePattern = [];
-      $(document).keypress(function (){
+      
+      $('h1').mouseenter(function (){
    
             if(started === false){
                $("#level-title").text(`Level ${level}`)
-               nextSequence()
+                  nextSequence();
+               
                started = true;
          }
    })
 }
 
-let  i = 0;
-do {
-  console.log(`Hi Joe the number is now ${i}`)
-  i++;
-}
-while (i < 11);
+
 
