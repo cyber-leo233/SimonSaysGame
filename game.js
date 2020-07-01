@@ -9,7 +9,7 @@ let started = false;
 
 
 // =================event listeners/handlers=============================
-$(document).keypress(function (){
+$(document).dblclick(function (){
    
          if(started === false){
             $("#level-title").text(`Level ${level}`)
@@ -117,4 +117,10 @@ function startOver () {
    })
 }
 
+let  i = 0;
+do {
+  console.log(`Hi Joe the number is now ${i}`)
+  i++;
+}
+while (i < 11);
 
