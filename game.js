@@ -9,7 +9,7 @@ let started = false;
 
 
 // =================event listeners/handlers=============================
-$(document).dblclick(function (){
+$('h1').mouseenter(function (){
    
          if(started === false){
             $("#level-title").text(`Level ${level}`)
